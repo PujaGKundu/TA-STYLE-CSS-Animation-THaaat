@@ -1,0 +1,15 @@
+body {
+    line-height: 1.5;
+    font-family: 'Lobster', cursive;
+    background:  linear-gradient(to right, skyblue, violet, purple);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+$heading: 1;
+@while $heading <= 6 {
+    h#{$heading} {
+        font-size: 2rem - ($heading * 0.25rem);
+    }
+    $heading: $heading + 1;
+}
